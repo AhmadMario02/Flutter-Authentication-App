@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "357504917396",
+    "project_id": "silver-charmer-444401-m2",
+    "storage_bucket": "silver-charmer-444401-m2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357504917396:android:edd186f2e60c96c6ac3981",
+        "android_client_info": {
+          "package_name": "com.example.crud_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357504917396-nvtgktig9j2lmamg1op0nv2d2v4do3en.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.crud_app",
+            "certificate_hash": "f70bfef26b26377f1bbc0edc5b9eec6c6564cf7f"
+          }
+        },
+        {
+          "client_id": "357504917396-5sdt67h99r5785runevlfkpg36isfljj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbOVApBTVmNvOZn3OKBj5LadUOlPG7FoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357504917396-5sdt67h99r5785runevlfkpg36isfljj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
