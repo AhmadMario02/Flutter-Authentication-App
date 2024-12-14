@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'firebase_options.dart';
 import 'services/auth_services.dart';
 import 'screens/login_screen.dart';
 import 'screens/dashboard_screen.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  // WidgetsFlutterBinding.ensureInitialized();
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   // await Firebase.initializeApp(
   //   options: FirebaseOptions(
   //       projectId: 'auth-project-flutter-444107',
@@ -16,9 +18,14 @@ void main() async {
   //       appId: '1:959178924674:android:72a1285f729260a6a20a9b'),
   // );
   await Firebase.initializeApp(
-  options: DefaultFirebaseOptions.currentPlatform,
+    options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   runApp(MyApp());
+
+  await Future.delayed(const Duration(seconds : 2));
+  FlutterNativeSplash.remove();
 }
 
 class MyApp extends StatelessWidget {
